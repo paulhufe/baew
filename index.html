@@ -43,7 +43,6 @@
         }
         
         .contact-button {
-            font-family: Helvetica Neue;
             display: inline-block;
             padding: 10px 20px;
             background-color: #E5E6E5; /* Choose a color that matches your site */
@@ -54,6 +53,22 @@
         }
 
         .contact-button:hover {
+            background-color: #0056b3; /* Adjust the color on hover if desired */
+        }
+
+        .pdf-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF; /* Choose a color that matches your site */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .pdf-button:hover {
             background-color: #0056b3; /* Adjust the color on hover if desired */
         }
 </style>
@@ -74,8 +89,8 @@
 
         <h2>Workshops 2024</h2>
         <p>
-            Workshop on Development Economics (7-8 May)<br>
-            Workshop on Economic Policy (9-10 May)
+            <a href=CfP_BEPB_2023.pdf" class="pdf-button" target="_blank">Workshop on Development Economics (7-8 May)</a>
+            <a href="CfP_BEPB_2023.pdf" class="pdf-button" target="_blank">Workshop on Economic Policy (9-10 May)</a>
         </p>
 
         <a href="mailto: econ-appliedworkshop@bristol.ac.uk" class="contact-button">Contact us</a>
