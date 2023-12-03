@@ -21,6 +21,7 @@
             text-align: center;
             padding: 1em;
             position: relative;
+            overflow: hidden; /* Ensure child elements don't overflow */
         }
 
         header img {
@@ -29,6 +30,9 @@
             border-radius: 0px;
             clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
             position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Ensure the image is behind the text */
         }
 
         h1 {
