@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bristol Applied Economics Week</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: white;
+            color: #333; /* Set default text color */
         }
 
         header {
@@ -32,47 +34,48 @@
 
         p {
             line-height: 1.6;
-            color: black;
+            color: #333; /* Set default text color */
         }
 
         footer {
             background-color: #E5E6E5;
-            color: white;
+            color: #333; /* Set default text color */
             text-align: center;
             padding: 1em 0;
         }
-        
-        .contact-button {
+
+        /* Common styles for buttons */
+        .button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #E5E6E5; /* Choose a color that matches your site */
-            color: white;
             text-decoration: none;
             border-radius: 5px;
+            cursor: pointer;
             transition: background-color 0.3s;
+        }
+
+        /* Contact button styles */
+        .contact-button {
+            background-color: #E5E6E5;
+            color: #333; /* Set default text color */
         }
 
         .contact-button:hover {
-            background-color: #0056b3; /* Adjust the color on hover if desired */
+            background-color: #0056b3;
+            color: white;
         }
 
+        /* PDF button styles */
         .pdf-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007BFF; /* Choose a color that matches your site */
+            background-color: #007BFF;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
             margin: 10px 0;
-            cursor: pointer;
         }
 
         .pdf-button:hover {
-            background-color: #0056b3; /* Adjust the color on hover if desired */
+            background-color: #0056b3;
         }
-</style>
-
+    </style>
 </head>
 
 <body>
@@ -93,7 +96,7 @@
             <a href="CfP_BEPB_2023.pdf" class="pdf-button" target="_blank">Workshop on Economic Policy (9-10 May)</a>
         </p>
 
-        <a href="mailto: econ-appliedworkshop@bristol.ac.uk" class="contact-button">Contact us</a>
+        <a href="mailto:econ-appliedworkshop@bristol.ac.uk" class="button contact-button">Contact us</a>
 
     </section>
 
@@ -104,4 +107,3 @@
 </body>
 
 </html>
-
