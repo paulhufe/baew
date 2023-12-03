@@ -1,2 +1,2 @@
-# conference_BRS
-Homepage for Conferences hosted by Applied Economics Group in Bristol
+# baew
+Homepage for the Bristol Applied Economics Week
