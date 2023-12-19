@@ -31,6 +31,8 @@
 
         /* Header image styles */
         header img {
+            max-width: 100%; /* Make the image responsive */
+            height: auto; /* Automatically adjust the height */
             height: 100%; /* Make the image fill the entire height of the header */
             width: auto; /* Ensure the width adjusts proportionally */
             border-radius: 0px; /* Remove border-radius */
@@ -106,7 +108,7 @@
         /* Responsive styles for smaller screens */
         @media only screen and (max-width: 600px) {
             header {
-                height: auto; /* Set header height to auto for smaller screens */
+                display: none; /* Hide the header for screens with a maximum width of 600px */
             }
 
             header img {
@@ -115,7 +117,7 @@
             }
 
             h1 {
-                font-size: 2em; /* Adjust the font size for smaller screens */
+                font-size: 1.5em; /* Adjust the font size for smaller screens */
             }
         }
     </style>
@@ -133,8 +135,7 @@
     <section>
         <h2>Welcome!</h2>
         <p>
-            The Bristol Spring Week in Applied Economics is a series of independent workshops that convene the best applied economists from Europe and beyond. Workshops are organised by the School of Economics at the University of Bristol
-            and reflect the full breadth of applied economic research in Bristol.
+            The Bristol Spring Week in Applied Economics is a series of independent workshops that convene the best applied economists from Europe and beyond. Workshops are organised by the School of Economics at the University of Bristol and reflect the full breadth of applied economic research in Bristol.
         </p>
 
         <p>
