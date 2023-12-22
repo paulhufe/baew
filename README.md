@@ -1,2 +1,2 @@
 # baew
-Homepage for the Bristol Applied Economics Week
+Homepage for the Bristol Applied Economics Meeting
