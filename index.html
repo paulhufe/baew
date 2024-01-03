@@ -116,6 +116,13 @@
                 display: none; /* header not shown on mobile devices */
             }
         }
+
+        /* Responsive styles for slightly larger screens (omit h1) */
+        @media only screen and (max-width: 800px) {
+        h1 {
+                display: none; /* Hide only the h1 element on screens between 401px to 600px */
+            }
+        }
     </style>
 </head>
 
