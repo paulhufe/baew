@@ -16,35 +16,43 @@
             color: #333; /* Set the default text color */
         }
 
-		header {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			background-color: #772059;
-			color: white;
-			padding: 1em;
-			overflow: hidden;
-			height: 200px;
-			margin: auto;
-		}
+        /* Header styles */
+        header {
+            position: relative;
+            background-color: #772059; /* Header background color */
+            color: white; /* Header text color */
+            text-align: center; /* Center-align header text */
+            padding: 1em; /* Add padding to the header */
+            overflow: hidden; /* Hide overflowing content */
+            height: 200px; /* Set the fixed height of the header */
+            margin: auto; /* Center the header horizontally */
+        }
 
-		/* Header image styles */
-		header img {
-			max-width: 20%; /* Adjust the width of the image as needed */
-			height: auto;
-			border-radius: 0px;
-			clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%);
-		}
-
-		/* Header text styles */
-		h1 {
-			max-width: 60%; /* Adjust the width of the text container */
-			margin: 0;
-			padding: 0.5em;
-			font-size: 3.5em;
-		}
+        /* Header image styles */
+        header img {
+            max-width: none; /* Make the image responsive */
+            height: 100%; /* Make the image fill the entire height of the header */
+            width: auto; /* Ensure the width adjusts proportionally */
+            border-radius: 0px; /* Remove border-radius */
+            clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%); /* Create a clean cut on the right side */
+            position: absolute; /* Position the image absolutely */
+            top: 0; /* Align the image to the top of the header */
+            left: 10%; /* Align the image to the left of the header */
+            z-index: 1; /* Ensure the image is behind the text */
+        }
 
 
+
+        /* Header text styles */
+        h1 {
+            position: absolute; /* Position the text absolutely */
+            bottom: 0; /* Align the text to the bottom of the header */
+            right: 0; /* Align the text to the right of the header */
+            margin: 0; /* Remove default margin */
+            padding: 0.5em; /* Add padding to the text */
+            font-size: 3.5em; /* Set the font size of the text */
+            white-space: nowrap; /* Prevent text from wrapping to the next line */
+        }
 
         /* Main section styles */
         section {
@@ -102,23 +110,19 @@
             padding: 1em 0; /* Add padding to the footer */
         }
 
-		/* Media query for smaller screens */
-		@media only screen and (max-width: 600px) {
-			header {
-				flex-direction: column; /* Stack items on smaller screens */
-				height: auto;
-				text-align: center; /* Center-align text on smaller screens */
-			}
+        /* Responsive styles for smaller screens */
+        @media only screen and (max-width: 600px) {
+            header {
+                display: none; /* header not shown on mobile devices */
+            }
+        }
 
-			header img, h1 {
-				max-width: 100%; /* Adjust width for smaller screens */
-			}
-
-			header img {
-				margin-bottom: 1em;
-			}
-		}
-
+        /* Responsive styles for slightly larger screens (omit h1) */
+        @media only screen and (max-width: 1400px) {
+        h1 {
+                display: none; /* Hide only the h1 element on screens between 401px to 600px */
+            }
+        }
     </style>
 </head>
 
