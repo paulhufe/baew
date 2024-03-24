@@ -6,21 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Bristol Applied Economics Meetings</title>
-    <script>
-    // Function to toggle visibility of development links
-    function toggleDevelopmentLinks() {
-        var developmentLinks = document.getElementById("development_links");
-        if (developmentLinks.style.display === "none") {
-            developmentLinks.style.display = "block";
-        } else {
-            developmentLinks.style.display = "none";
-        }
-    }
-    // Add event listener to the development link
-    document.getElementById("development_link").addEventListener("click", toggleDevelopmentLinks);
-    </script>
-
-
     <style>
         /* Global styles for the entire document */
         body {
@@ -165,17 +150,17 @@
         <p>
             <!-- <a href="CfP_DEV_24.pdf" class="pdf-link" target="_blank">Meeting on Development Economics | 7-8 May </a> <br> -->
             <span id="development_link" class="pdf-link">Meeting on Development Economics | 7-8 May</span>
+            <!-- Added a div element to contain hyperlinks for the development economics meeting -->
             <div id="development_links" style="display: none;">
-        <!-- Hyperlinks for Development Economics Meeting -->
-            <a href="CfP_DEV_24.pdf" class="pdf-link">CfP</a><br>
-            <a href="CfP_DEV_24.pdf" class="pdf-link">Program</a><br>
-        <!-- Add more hyperlinks as needed -->
+                <!-- Hyperlinks for Development Economics Meeting -->
+                <a href="CfP_DEV_24.pdf" class="pdf-link">CfP</a><br>
+                <a href="CfP_DEV_24.pdf" class="pdf-link">Program</a><br>
+                <!-- Add more hyperlinks as needed -->
             </div>
             <a href="CfP_POL_24.pdf" class="pdf-link" target="_blank">Meeting on Economic Policy | 9-10 May </a> <br>
             <a href="CfP_EDU_24.pdf" class="pdf-link" target="_blank">Meeting on Access to Higher Education | 13 May </a>
 
         </p>
-
         <h2>Submissions</h2>
         <p>Submit your paper by 15 March 2024. We look forward to receiving your best work!</p>
         <p>
@@ -187,6 +172,22 @@
     <footer>
         &copy; 2023 Bristol Applied Economics Meetings. All rights reserved.
     </footer>
+
+        <!-- Added JavaScript to toggle the visibility of the development links -->
+    <script>
+        // Function to toggle visibility of development links
+        function toggleDevelopmentLinks() {
+            var developmentLinks = document.getElementById("development_links");
+            if (developmentLinks.style.display === "none") {
+                developmentLinks.style.display = "block";
+            } else {
+                developmentLinks.style.display = "none";
+            }
+        }
+        // Add event listener to the development link
+        // Moved this part of the code to the end of the body to ensure that the element exists when the script runs
+        document.getElementById("development_link").addEventListener("click", toggleDevelopmentLinks);
+    </script>
 
 </body>
 
