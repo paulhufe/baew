@@ -6,6 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Bristol Applied Economics Meetings</title>
+    <script>
+    // Function to toggle visibility of development links
+    function toggleDevelopmentLinks() {
+        var developmentLinks = document.getElementById("development_links");
+        if (developmentLinks.style.display === "none") {
+            developmentLinks.style.display = "block";
+        } else {
+            developmentLinks.style.display = "none";
+        }
+    }
+    // Add event listener to the development link
+    document.getElementById("development_link").addEventListener("click", toggleDevelopmentLinks);
+    </script>
+
+
     <style>
         /* Global styles for the entire document */
         body {
@@ -148,7 +163,14 @@
         <h2>Meetings 2024</h2>
         <p> The 2024 edition of <span class="colored-text">BÆM</span> takes place 7-13 May 2024 at the University of Bristol. Select a workshop to see details about the call for papers, organisers, and keynote speakers.</p>
         <p>
-            <a href="CfP_DEV_24.pdf" class="pdf-link" target="_blank">Meeting on Development Economics | 7-8 May </a> <br>
+            <!-- <a href="CfP_DEV_24.pdf" class="pdf-link" target="_blank">Meeting on Development Economics | 7-8 May </a> <br> -->
+            <span id="development_link" class="pdf-link">Meeting on Development Economics | 7-8 May</span>
+            <div id="development_links" style="display: none;">
+        <!-- Hyperlinks for Development Economics Meeting -->
+            <a href="CfP_DEV_24.pdf" class="pdf-link">CfP</a><br>
+            <a href="CfP_DEV_24.pdf" class="pdf-link">Program</a><br>
+        <!-- Add more hyperlinks as needed -->
+            </div>
             <a href="CfP_POL_24.pdf" class="pdf-link" target="_blank">Meeting on Economic Policy | 9-10 May </a> <br>
             <a href="CfP_EDU_24.pdf" class="pdf-link" target="_blank">Meeting on Access to Higher Education | 13 May </a>
 
