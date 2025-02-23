@@ -123,33 +123,27 @@
                 display: none; /* Hide only the h1 element on screens between 401px to 600px */
             }
         }
-        /* Navigation menu styling */
-        nav {
-          position: absolute;
-          bottom: 10px;
-          left: 10px;
-        }
-
-        nav ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
+        /* Navigation Buttons Styling */
+        .nav-buttons {
           display: flex;
+          gap: 10px;
+          justify-content: center;
+          margin: 20px 0;
         }
 
-        nav ul li {
-          margin-right: 15px;
-        }
-
-        nav ul li a {
+        .nav-buttons .button {
+          background-color: #772059;
           color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
           text-decoration: none;
-          font-size: 1.2em;
-          transition: color 0.3s;
+          font-size: 1em;
+          transition: background-color 0.3s ease;
         }
 
-        nav ul li a:hover {
-          color: #B01C2E;
+        .nav-buttons .button:hover {
+          background-color: #B01C2E;
         }
     </style>
 </head>
@@ -160,19 +154,16 @@
    <header>
         <img src="Bristol4.png" alt="Bristol Applied Economics Meetings Logo">
         <h1>Bristol Applied Economics Meetings</h1>
-        <!-- Added Navigation Menu -->
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="programs.html">Current Program</a></li>
-            <li><a href="previous-programs.html">Previous Programs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
     </header>
 
     <!-- Main content section -->
     <section>
+        <div class="nav-buttons">
+          <a href="index.html" class="button">Home</a>
+          <a href="previous-programs.html" class="button">Previous Programs</a>
+        </div>
+
+
         <h2>Welcome!</h2>
         <p>
             The Bristol Applied Economics Meetings (<span class="colored-text">BÆM</span>) are a series of independent workshops organised by the University of Bristol’s School of Economics to bring together leading applied economists from Europe and beyond.
