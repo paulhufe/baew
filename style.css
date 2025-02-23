@@ -1,138 +1,138 @@
-    /* Global styles for the entire document */
-    body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Set the font for the entire body */
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-        background-color: white; /* Set the background color */
-        color: #333; /* Set the default text color */
-    }
+/* Global styles for the entire document */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Set the font for the entire body */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: white; /* Set the background color */
+    color: #333; /* Set the default text color */
+}
 
-    /* Header styles */
+/* Header styles */
+header {
+    position: relative;
+    background-color: #772059; /* Header background color */
+    color: white; /* Header text color */
+    text-align: center; /* Center-align header text */
+    padding: 1em; /* Add padding to the header */
+    overflow: hidden; /* Hide overflowing content */
+    height: 200px; /* Set the fixed height of the header */
+    margin: auto; /* Center the header horizontally */
+}
+
+/* Header image styles */
+header img {
+    max-width: none; /* Make the image responsive */
+    height: 100%; /* Make the image fill the entire height of the header */
+    width: auto; /* Ensure the width adjusts proportionally */
+    border-radius: 0px; /* Remove border-radius */
+    clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%); /* Create a clean cut on the right side */
+    position: absolute; /* Position the image absolutely */
+    top: 0; /* Align the image to the top of the header */
+    left: 10%; /* Align the image to the left of the header */
+    z-index: 1; /* Ensure the image is behind the text */
+}
+
+
+
+/* Header text styles */
+h1 {
+    position: absolute; /* Position the text absolutely */
+    bottom: 0; /* Align the text to the bottom of the header */
+    right: 0; /* Align the text to the right of the header */
+    margin: 0; /* Remove default margin */
+    padding: 0.5em; /* Add padding to the text */
+    font-size: 3.5em; /* Set the font size of the text */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+/* Main section styles */
+section {
+    max-width: 800px; /* Set the maximum width of the section */
+    margin: auto; /* Center the section horizontally */
+    padding: 20px; /* Add padding to the section */
+}
+
+/* Heading styles */
+h2 {
+    color: black; /* Set the color of heading text */
+}
+
+/* Paragraph styles */
+p {
+    text-align: justify; /* text alignment */
+    line-height: 1.8; /* Set the line height for better readability */
+    color: #333; /* Set the color of paragraph text */
+}
+
+.colored-text {
+    color: #B01C2E; /* Change 'red' to the desired color */
+}
+
+/* Contact link styles */
+.contact-link {
+    color: #B01C2E; /* Set the color of the contact link */
+    text-decoration: none; /* Remove underline from the link */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.contact-link:hover {
+    color: #0056b3; /* Set the hover color of the contact link */
+}
+
+/* PDF link styles */
+.pdf-link {
+    color: #B01C2E; /* Set the color of the PDF link */
+    margin: 10px 0; /* Add margin to the PDF link */
+    text-decoration: none; /* Remove underline from the link */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.pdf-link:hover {
+    color: #0056b3; /* Set the hover color of the PDF link */
+}
+
+/* Footer styles */
+footer {
+    background-color: #E5E6E5; /* Set the background color of the footer */
+    color: #333; /* Set the color of footer text */
+    text-align: center; /* Center-align footer text */
+    padding: 1em 0; /* Add padding to the footer */
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
     header {
-        position: relative;
-        background-color: #772059; /* Header background color */
-        color: white; /* Header text color */
-        text-align: center; /* Center-align header text */
-        padding: 1em; /* Add padding to the header */
-        overflow: hidden; /* Hide overflowing content */
-        height: 200px; /* Set the fixed height of the header */
-        margin: auto; /* Center the header horizontally */
+        display: none; /* header not shown on mobile devices */
     }
+}
 
-    /* Header image styles */
-    header img {
-        max-width: none; /* Make the image responsive */
-        height: 100%; /* Make the image fill the entire height of the header */
-        width: auto; /* Ensure the width adjusts proportionally */
-        border-radius: 0px; /* Remove border-radius */
-        clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%); /* Create a clean cut on the right side */
-        position: absolute; /* Position the image absolutely */
-        top: 0; /* Align the image to the top of the header */
-        left: 10%; /* Align the image to the left of the header */
-        z-index: 1; /* Ensure the image is behind the text */
+/* Responsive styles for slightly larger screens (omit h1) */
+@media only screen and (max-width: 1400px) {
+h1 {
+        display: none; /* Hide only the h1 element on screens between 401px to 600px */
     }
+}
+/* Navigation Buttons Styling */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
 
+.nav-buttons .button {
+    background-color: rgba(119, 32, 89, 0.6); /* 60% opacity of #772059 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
 
-
-    /* Header text styles */
-    h1 {
-        position: absolute; /* Position the text absolutely */
-        bottom: 0; /* Align the text to the bottom of the header */
-        right: 0; /* Align the text to the right of the header */
-        margin: 0; /* Remove default margin */
-        padding: 0.5em; /* Add padding to the text */
-        font-size: 3.5em; /* Set the font size of the text */
-        white-space: nowrap; /* Prevent text from wrapping to the next line */
-    }
-
-    /* Main section styles */
-    section {
-        max-width: 800px; /* Set the maximum width of the section */
-        margin: auto; /* Center the section horizontally */
-        padding: 20px; /* Add padding to the section */
-    }
-
-    /* Heading styles */
-    h2 {
-        color: black; /* Set the color of heading text */
-    }
-
-    /* Paragraph styles */
-    p {
-        text-align: justify; /* text alignment */
-        line-height: 1.8; /* Set the line height for better readability */
-        color: #333; /* Set the color of paragraph text */
-    }
-
-    .colored-text {
-        color: #B01C2E; /* Change 'red' to the desired color */
-    }
-
-    /* Contact link styles */
-    .contact-link {
-        color: #B01C2E; /* Set the color of the contact link */
-        text-decoration: none; /* Remove underline from the link */
-        transition: color 0.3s; /* Add a smooth color transition on hover */
-    }
-
-    /* Change link color on hover */
-    .contact-link:hover {
-        color: #0056b3; /* Set the hover color of the contact link */
-    }
-
-    /* PDF link styles */
-    .pdf-link {
-        color: #B01C2E; /* Set the color of the PDF link */
-        margin: 10px 0; /* Add margin to the PDF link */
-        text-decoration: none; /* Remove underline from the link */
-        transition: color 0.3s; /* Add a smooth color transition on hover */
-    }
-
-    /* Change link color on hover */
-    .pdf-link:hover {
-        color: #0056b3; /* Set the hover color of the PDF link */
-    }
-
-    /* Footer styles */
-    footer {
-        background-color: #E5E6E5; /* Set the background color of the footer */
-        color: #333; /* Set the color of footer text */
-        text-align: center; /* Center-align footer text */
-        padding: 1em 0; /* Add padding to the footer */
-    }
-
-    /* Responsive styles for smaller screens */
-    @media only screen and (max-width: 600px) {
-        header {
-            display: none; /* header not shown on mobile devices */
-        }
-    }
-
-    /* Responsive styles for slightly larger screens (omit h1) */
-    @media only screen and (max-width: 1400px) {
-    h1 {
-            display: none; /* Hide only the h1 element on screens between 401px to 600px */
-        }
-    }
-    /* Navigation Buttons Styling */
-    .nav-buttons {
-      display: flex;
-      gap: 10px;
-      justify-content: flex-start;
-      margin: 20px 0;
-    }
-
-    .nav-buttons .button {
-        background-color: rgba(119, 32, 89, 0.6); /* 60% opacity of #772059 */
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        text-decoration: none;
-        font-size: 1em;
-        transition: background-color 0.3s ease;
-    }
-
-    .nav-buttons .button:hover {
-      background-color: #B01C2E;
-    }
+.nav-buttons .button:hover {
+  background-color: #B01C2E;
+}
