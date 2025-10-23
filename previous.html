@@ -11,6 +11,8 @@
         .meeting-title {
             cursor: pointer;
             user-select: none;
+            display: inline-block;
+            margin-bottom: 10px;
         }
 
         .meeting-title:hover {
@@ -24,6 +26,11 @@
 
         .meeting-links.active {
             display: block;
+        }
+
+        .meeting-links.active~.meeting-title,
+        .meeting-title:has(+ .meeting-links.active) {
+            margin-bottom: 0px;
         }
     </style>
 </head>
