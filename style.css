@@ -32,6 +32,8 @@ header {
     /* Set the fixed height of the header */
     margin: auto;
     /* Center the header horizontally */
+    font-family: 'Lato', sans-serif;
+    /* Ensure Lato font is used in header */
 }
 
 /* Header image styles */
@@ -54,6 +56,8 @@ header img {
     /* Align the image to the left of the header */
     z-index: 1;
     /* Ensure the image is behind the text */
+    transform: scaleX(-1);
+    /* Flip the image horizontally */
 }
 
 
@@ -74,6 +78,8 @@ h1 {
     /* Set the font size of the text */
     white-space: nowrap;
     /* Prevent text from wrapping to the next line */
+    font-family: 'Lato', sans-serif;
+    /* Ensure Lato font is used */
 }
 
 /* Main section styles */
