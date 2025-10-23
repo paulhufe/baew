@@ -56,8 +56,6 @@ header img {
     /* Align the image to the left of the header */
     z-index: 1;
     /* Ensure the image is behind the text */
-    transform: scaleX(-1);
-    /* Flip the image horizontally */
 }
 
 
