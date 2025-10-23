@@ -155,8 +155,12 @@ footer {
     /* Set the color of footer text */
     text-align: center;
     /* Center-align footer text */
-    padding: 1em 0;
+    padding: 2em 0;
     /* Add padding to the footer */
+    margin-top: 60px;
+    /* Add space above footer */
+    font-size: 0.9em;
+    /* Slightly smaller font size */
 }
 
 /* Responsive styles for smaller screens */
@@ -207,4 +211,20 @@ footer {
     background-color: #333;
     color: white;
     border-color: #333;
+}
+/* Meeting title styles */
+.meeting-title {
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.meeting-title:hover {
+    background-color: #f0f0f0;
+    transform: translateX(2px);
 }
