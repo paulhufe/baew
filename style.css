@@ -228,3 +228,39 @@ footer {
     background-color: #f0f0f0;
     transform: translateX(2px);
 }
+
+/* Meeting links styles */
+.meeting-links {
+    margin-top: 8px;
+    margin-left: 12px;
+    padding-left: 16px;
+    border-left: 2px solid #E5E6E5;
+}
+
+.meeting-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 8px 0 15px 0;
+}
+
+.meeting-links li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.meeting-links .arrow {
+    font-size: smaller;
+    color: #999;
+    margin-right: 4px;
+}
+
+.meeting-links a {
+    color: #555;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.meeting-links a:hover {
+    color: #B01C2E;
+}
